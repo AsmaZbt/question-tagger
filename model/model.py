@@ -5,11 +5,11 @@ import re
 
 model_bert = SentenceTransformer('all-MiniLM-L6-v2')
 
-with open("trained_model.pkl", "rb") as f:
+with open("./trained_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 
-with open("multilabel_binarizer.pkl", "rb") as f:
+with open("./multilabel_binarizer.pkl", "rb") as f:
     classes = pickle.load(f)
 
 def predict_pipeline(text):
