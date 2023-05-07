@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from model.model import predict_pipeline
+from model import predict_pipeline
 
 
 app = FastAPI()
